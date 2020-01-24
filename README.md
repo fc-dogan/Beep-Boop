@@ -23,11 +23,11 @@ This is a web application project that takes a number from a user and returns a 
 
 * Open a simple HTTP server in the top level of cloned directory. 
 
-* or open in github page [here]()
+* or open in github page [here](https://fc-dogan.github.io/Beep-Boop/)
 
 For a mac, run the following command in your terminal:
 
-* $ git clone 
+* $ git clone https://github.com/fc-dogan/Beep-Boop.git
 
 * Then open your web browser of choice
 
