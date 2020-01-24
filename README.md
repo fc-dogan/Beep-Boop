@@ -13,9 +13,9 @@ This is a web application project that takes a number from a user and returns a 
 | Behavior         | input        | output |
 | :--------------- |:------------:| -----:|
 | The program returns a range of numbers from 0 to the users inputted number  | "4"  | "0, 1, 2, 3, 4" |
-| It replace all digits with "Beep!" if numbers contain a 1 | 11 | "Beep!" |
-| It replace all digits with "Boop!" if numbers contain a 2 | 24 | "Boop!"  |
-| It replace all digits with  "I'm sorry, Dave. I'm afraid I can't do that." if numbers contain a 3 | 35 |  "I'm sorry, Dave. I'm afraid I can't do that." |
+| It replace all digits with "Beep!" if numbers contain a 1 | 11 | "Beep!,Beep!" |
+| It replace all digits with "Boop!" if numbers contain a 2 | 24 | "Boop!,Boop!"  |
+| It replace all digits with  "I'm sorry, Dave. I'm afraid I can't do that." if numbers contain a 3 | 3 |  "I'm sorry, Dave. I'm afraid I can't do that." |
 |These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third.
 ## Setup
 

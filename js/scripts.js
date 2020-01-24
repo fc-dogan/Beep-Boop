@@ -20,7 +20,9 @@ var beepBoop = function(input) {
     } else if (arrayInput.includes("1")) {
       output.push("Beep!");
     } else {
-      output.push(i);
+      for (var i = 0; i <= input; i++){
+           output.push(i);
+      }
     }
   };
   return output
@@ -35,7 +37,7 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = beepBoop(number);
-    $("#result").text(result);
-
+    $("#result").append("<li>"+ result +"</li>");
+    
   });
 });
