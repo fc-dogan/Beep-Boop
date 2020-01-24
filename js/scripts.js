@@ -1,14 +1,4 @@
-//business logic
-// first behavior
-// var beepBoop = function(input) {
-//   var output = [];
-//   for (var i = 0; i <= input; i++){
-//      output.push(i);
-//   };
-//   return output
-// };
 
-// 2nd,3rd, and 4th behaviors
 var beepBoop = function(input) {
   var output = [];
   var arrayInput = input.toString().split("");

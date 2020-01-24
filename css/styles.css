@@ -1,0 +1,14 @@
+.jumbotron {
+  text-align: center;
+  font-family: fantasy;
+  background-color: rgb(129, 108, 141);
+  
+}
+
+h1 {
+  font-size: 75px;
+}
+
+.container {
+  text-align: center;
+}
