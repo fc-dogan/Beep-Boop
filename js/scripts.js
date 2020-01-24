@@ -28,6 +28,6 @@ $(document).ready(function() {
     var number = parseInt($("input#number").val());
     var result = beepBoop(number);
     $("#result").append("<li>"+ result +"</li>");
-    
+    $("#boom").fadeOut();
   });
 });
