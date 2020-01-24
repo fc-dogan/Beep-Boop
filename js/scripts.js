@@ -1,5 +1,5 @@
 //business logic
-
+// first behavior
 // var beepBoop = function(input) {
 //   var output = [];
 //   for (var i = 0; i <= input; i++){
@@ -8,6 +8,7 @@
 //   return output
 // };
 
+// 2nd,3rd, and 4th behaviors
 var beepBoop = function(input) {
   var output = [];
   var arrayInput = input.toString().split("");
@@ -18,6 +19,8 @@ var beepBoop = function(input) {
       output.push("Boop!");
     } else if (arrayInput.includes("1")) {
       output.push("Beep!");
+    } else {
+      output.push(i);
     }
   };
   return output
