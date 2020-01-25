@@ -4,7 +4,7 @@ var beepBoop = function(input) {
   var arrayInput = input.toString().split("");
   for (var i = 0; i < arrayInput.length ; i++){
     if (arrayInput.includes("3")) {
-      output.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      output ="I'm sorry, Dave. I'm afraid I can't do that."
     } else if (arrayInput.includes("2")) {
       output.push("Boop!");
     } else if (arrayInput.includes("1")) {
@@ -28,6 +28,7 @@ $(document).ready(function() {
     var number = parseInt($("input#number").val());
     var result = beepBoop(number);
     $("#result").append("<li>"+ result +"</li>");
-    $("#boom").fadeOut();
+    $("#boom").toggle();
+   
   });
 });
