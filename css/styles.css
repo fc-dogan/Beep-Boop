@@ -1,7 +1,7 @@
 .jumbotron {
   text-align: center;
   font-family: fantasy;
-  background-color: rgb(129, 109, 141);
+  background-color: rgb(136, 123, 143);
   
 }
 
@@ -21,7 +21,7 @@ img {
 }
 
 .row {
-  background-color: rgb(156, 139, 165);
+  background-color: rgb(176, 163, 184);
   border-radius: 30px 30px 30px 30px;
   min-height: 200px;
 }
@@ -31,4 +31,9 @@ img {
   height: 150px;
   float: left;
   padding-left: 50px;
+}
+
+button {
+  height: 50px;
+  width: 300px;
 }
