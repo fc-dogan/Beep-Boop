@@ -29,4 +29,6 @@ img {
 #boom {
   display: none;
   height: 150px;
+  float: left;
+  padding-left: 50px;
 }
