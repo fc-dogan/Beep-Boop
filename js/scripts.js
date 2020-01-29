@@ -22,9 +22,6 @@ function branchInput(index) {
   return temp;
 };
 
-
-
-
 //user interface logic
 
 $(document).ready(function() {
@@ -36,21 +33,5 @@ $(document).ready(function() {
     $("#result").text(result);
 
     $("input#number").val("");
-  });
-});
-
-
-//user interface logic
-
-$(document).ready(function() {
-  $("form#formOne").submit(function() {
-    event.preventDefault();
-    var number = parseInt($("input#number").val());
-    var result = beepBoop(number);
-    $("#result").each(function() {
-      $(this).append($("<li>").text(result));
-    });
-    $("#boom").toggle();
-   
   });
 });
