@@ -6,18 +6,23 @@
 
 ## Description
 
-This is a web application project that takes a number from a user and returns a range of numbers or some values.
+This is a web application project that takes a number from a user and returns a range of numbers or some values per specifications.
 
 ## Specifications
 
 | Behavior         | input        | output |
-| :--------------- |:------------:| -----:|
-| The program returns a range of numbers from 0 to the users inputted number  | 4  | "0, 1, 2, 3, 4" |
-| It replace all digits with "Beep!" if numbers contain a 1 | 11 | "Beep!,Beep!" |
-| It replace all digits with "Boop!" if numbers contain a 2 | 24 | "Boop!,Boop!"  |
-| It replace with  "I'm sorry, Dave. I'm afraid I can't do that." if numbers contain a 3 | 35 |  "I'm sorry, Dave. I'm afraid I can't do that." |
-|These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third.
+| :--------------- |:------------:|:-----|
+| The program returns a range of numbers from 0 to the users inputted number  |  |  |
+| It replaces all digits with "Beep!" if numbers contain a 1 | 1 | 0, Beep! |
+| It replaces all digits with "Boop!" if numbers contain a 2 | 2 | 0, Beep!, Boop!  |
+| It replaces with  "I'm sorry, Dave. I'm afraid I can't do that." if numbers contain a 3 | 3 |  0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that. |
+|These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third.   |   |
+| If a user inputs a 6, the program displays a list of values | 6 |0,Beep!,Boop!,I'm sorry, Dave. I'm afraid I can't do that.,4,5,6  |
+|If a user inputs a 12, the program displays a list of values | 12  | 0,Beep!,Boop!,I'm sorry, Dave. I'm afraid I can't do that.,4,5,6,7,8,9,Beep!,Beep!,Boop!|
+
+
 ## Setup
+
 
 * Clone this repository.
 
