@@ -1,23 +1,43 @@
 
-var beepBoop = function(input) {
+var beepBoop = function(number) {
   var output = [];
-  var arrayInput = input.toString().split("");
-  for (var i = 0; i < arrayInput.length ; i++){
-    if (arrayInput.includes("3")) {
-      output ="I'm sorry, Dave. I'm afraid I can't do that."
-    } else if (arrayInput.includes("2")) {
-      output.push("Boop!");
-    } else if (arrayInput.includes("1")) {
-      output.push("Beep!");
-    } else {
-      for (var i = 0; i <= input; i++){
-           output.push(i);
-      }
-    }
-  };
+  for (var index= 0; index<=number; index++) {
+    var temp = branchInput(index);
+    output.push(temp);
+  }
   return output
 };
 
+function branchInput(index) {
+  var arrayInput = index.toString().split("");
+  if (arrayInput.includes("3")) {
+    temp = ["I'm sorry, Dave. I'm afraid I can't do that."];
+  } else if (arrayInput.includes("2")) {
+    temp = ["Boop!"];
+  } else if (arrayInput.includes("1")) {
+    temp = ["Beep!"]; 
+  } else {
+    temp = index.toString();
+  }
+  return temp;
+};
+
+
+
+
+//user interface logic
+
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+    event.preventDefault();
+    var number = parseInt($("input#number").val());
+    var result = beepBoop(number);
+    console.log(result);
+    $("#result").text(result);
+
+    $("input#number").val("");
+  });
+});
 
 
 //user interface logic
@@ -27,7 +47,9 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = beepBoop(number);
-    $("#result").append("<li>"+ result +"</li>");
+    $("#result").each(function() {
+      $(this).append($("<li>").text(result));
+    });
     $("#boom").toggle();
    
   });
